@@ -9,7 +9,6 @@ def main():
     word_set = load_word_set("data/words.txt")
     secret = random.choice(list(word_set))
     wordle = Wordle(secret)
-    print(secret)
     print('Rules of the game: \n1. Each guess must be a valid five-letter word and should be in capital letters. ')
     print('2. If the letter color is in green that means the letter is in the word and in the correct spot..')
     print('3. If the letter color is in red that means the letter is in the word but in the wrong spot..')
